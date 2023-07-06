@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './routes/Home';
+import Aframe from './routes/Aframe';
 
 function App() {
   return (
-    <div>
-     
+    <>
+     <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/aframe' element={<Aframe />} />
+     </Routes>
 
-    </div>
+    </>
   );
 }
 
