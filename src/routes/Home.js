@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import D_PERSONALES from '../components/d_personales/D_personales';
+import Back from '../components/back/Back';
 
 const Home = () => {
-  const [personData, setPersonData] = useState(null);
-
-  useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/d_personales")
-      .then(response => response.json())
-      .then(data => setPersonData(data['hydra:member'][0]))
-      .catch(error => console.log('error', error));
-  }, []);
-
   return (
     <div>
-      <h1>Hola</h1>
-      {personData && (
-        <div>
-          <h2>{personData.nombre}</h2>
-          <h2>{personData.apellidos}</h2>
-        </div>
-      )}
-      <Link to='/aframe'>AFRAME</Link>
+      <div className="container">
+        <a-scene>
+          <div className="home-link"> 
+            <h1>Hola</h1>
+            <D_PERSONALES/>
+            <Back/>
+            <Link to='/'>AFRAME</Link>
+          </div>
+          <a-assets>
+            <img id="bg_two" src="/assets/background2.jpg" alt="fondo" />
+          </a-assets>
+          <a-sky src="#bg_two" />
+          <a-camera position="0 0 0" wasd-controls="fly: true"></a-camera>
+        </a-scene>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Oswald:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Tillana:wght@400;600;700&display=swap");
 * {
   margin: 0;
@@ -20,4 +21,17 @@ body a {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+.container .home-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2; /* Asegura que el enlace esté en la capa superior */
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

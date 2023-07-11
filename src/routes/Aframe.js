@@ -1,37 +1,60 @@
-import 'aframe'
-import React, {Component} from 'react'
+import 'aframe';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import D_personales from '../components/d_personales/D_personales';
+
 
 class Basica3D extends Component {
-  render () {
+  render() {
     return (
-      <a-scene>   
-        <Link to="/">HOME</Link>
-        <a-assets>
-          <img id="skyTexture" src="/assets/background1.jpg" alt="Sky" />
-        </a-assets>
-        <a-sky src="#skyTexture" />
-        <a-entity 
-          geometry="primitive: box" 
-          position="-1 0.5 -3" 
-          rotation="0 45 0" 
-          material="color: #4CC3D9" />
-        <a-entity 
-          geometry="primitive: sphere; radius: 1.25;" 
-          position="0 1.25 -5" 
-          material="color: #EF2D5E" />
-        <a-entity 
-          geometry="primitive: cylinder; radius: 0.5, height: 1.5" 
-          position="1 0.75 -3" 
-          material="color: #FFC65D" />
+      <div className="container">
+        <Link to="/home" className="home-link">
+          HOME
+        </Link>
+        <a-scene>
+          <a-assets>
+            <img id="skyTexture" src="/assets/background1.jpg" alt="Sky" />
+          </a-assets>
+          <a-sky src="#skyTexture" />
+          <a-camera position="0 0 0" wasd-controls="fly: true"></a-camera>
           
-      </a-scene>
-
-
+          <a-entity position="0 0 -5">
+            <a-text
+              value="About Me"
+              align="center"
+              width="15"
+              position="0 0.8 0"
+              font="dejavu"
+              color="blue"
+              opacity="0.9"
+              negate="false"
+              side="double"
+              anchor="center"
+              baseline="center"
+            />
+            <a-text
+              value="My Proyects"
+              align="center"
+              width="7"
+              position="0 -0.8 0"
+              font="dejavu"
+              color="blue"
+              opacity="0.9"
+              negate="false"
+              side="double"
+              anchor="center"
+              baseline="center"
+            />
+            <a-image
+              src="/assets/arrow.png"
+              position="0 -0.5 0"
+              scale="5 5 5"
+            />
+          </a-entity>
+        </a-scene>
+      </div>
     );
   }
 }
 
 export default Basica3D;
-
-
