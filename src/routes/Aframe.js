@@ -1,5 +1,4 @@
 import 'aframe';
-import 'aframe-react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ const Basica3D = () => {
         >
           About Me
         </button>
-        <button
+        <button 
           onClick={() => handleClick('/projects')}
         >
           My Projects

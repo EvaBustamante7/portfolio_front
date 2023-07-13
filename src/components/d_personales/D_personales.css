@@ -13,10 +13,11 @@
 }
 .personales h2 {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .personales #foto {
   width: 200px;
   height: 200px;
+  margin-top: 10px;
   border-radius: 40px;
 }/*# sourceMappingURL=D_personales.css.map */

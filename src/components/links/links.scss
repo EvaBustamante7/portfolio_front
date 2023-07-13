@@ -1,0 +1,41 @@
+.card2 {
+  background-color: rgba(242, 242, 242, 0.8);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  border: 1px solid gray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  .links-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .link-item {
+    margin-bottom: 12px;
+  }
+
+
+}
