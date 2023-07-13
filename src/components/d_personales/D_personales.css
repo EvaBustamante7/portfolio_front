@@ -1,5 +1,22 @@
 .personales {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.8);
+  border-radius: 20px;
+  padding: 10px;
+  width: 360px;
   color: black;
-  position: relative;
-  z-index: 1;
+}
+.personales h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.personales #foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
 }/*# sourceMappingURL=D_personales.css.map */

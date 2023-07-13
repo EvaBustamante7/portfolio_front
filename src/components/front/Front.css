@@ -1,1 +1,23 @@
-/*# sourceMappingURL=Front.css.map */
+.dataFront {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.8);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+  width: 200px;
+}
+.dataFront h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+.dataFront img {
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 5px;
+}/*# sourceMappingURL=Front.css.map */

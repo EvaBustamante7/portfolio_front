@@ -21,6 +21,7 @@ const D_PERSONALES = () => {
       <h2>{Dpersonales.apellidos}</h2>
       <h2>{Dpersonales.telefono}</h2>
       <h2>{Dpersonales.mail}</h2>
+      <img id='foto' src='./assets/Ilustracion_sin_titulo.jpg' alt='foto de perfil'/>
     </div>
   );
 }

@@ -17,13 +17,13 @@ const Back = () => {
 
   return (
     <div>
-      {dataBack.map((item, index) => (
-        <div className='dataBack' key={index}>
-          <h2>{item.nombre}</h2>
-          <h2>{item.logo}</h2>
-        </div>
-      ))}
-    </div>
+    {dataBack.map((item, index) => (
+      <div className='dataBack' key={index}>
+        <h2>{item.nombre}</h2>
+        <img id='logo' src={`http://127.0.0.1:8000/back/img/${item.logo}`} alt={item.nombre} />
+      </div>
+    ))}
+  </div>
   );
 }
 
